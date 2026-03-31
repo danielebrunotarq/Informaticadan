@@ -26,27 +26,22 @@
             let eta = parseInt(document.getElementById("eta").value);
             let risultato = document.getElementById("risultato");
 
-            risultato.innerHTML = "";
-
-            if (isNaN(eta)) {
-                risultato.innerHTML = "<p>Inserisci un'età valida</p>";
-                return;
-            }
+    
 
             if (eta >= 18) {
                 risultato.innerHTML = `
                     <p>${nome} ${cognome}, puoi avere la patente B (auto)</p>
                     <img src="https://via.placeholder.com/300x180?text=Patente+B" alt="Patente B">
-                `;
+                ;
             } else if (eta >= 16) {
-                risultato.innerHTML = `
+                risultato = 
                     <p>${nome} ${cognome}, puoi avere la patente A (moto)</p>
                     <img src="https://via.placeholder.com/300x180?text=Patente+A" alt="Patente A">
-                `;
+                ;
             } else {
                 risultato.innerHTML = `
                     <p>${nome} ${cognome}, riprova quando sarai più grande</p>
-                `;
+                ;
             }
         }
     </script>
