@@ -10,7 +10,7 @@
     let text="non sei idoneo,riprova quando sarai più grande!"
     
   <p id="demo"></p>
- <img id="myimage" src="profilepic.jpg"></pic>
+ <img id="myimage" src="https://www.google.com/imgres?q=profilepic&imgurl=https%3A%2F%2Fthumbs.dreamstime.com%2Fb%2Ffaceless-male-avatar-hoodie-illustration-minimalist-default-photo-placeholder-wearing-light-gray-background-ideal-377566416.jpg&imgrefurl=https%3A%2F%2Fwww.dreamstime.com%2Fillustration%2Fneutral-profile-pic.html&docid=96L0XRVo8fzmaM&tbnid=M25CnWJO0s7AcM&vet=12ahUKEwjg0ev8l-OTAxW-zwIHHUA8Np4QnPAOegQIIBAB..i&w=800&h=802&hcb=2&ved=2ahUKEwjg0ev8l-OTAxW-zwIHHUA8Np4QnPAOegQIIBAB"></img>
 
     <h1>Verifica Patente</h1>
 
@@ -21,9 +21,9 @@
     let eta=number(prompt("inserisci età"))
     function verifica(){
     if(eta>=18){ 
-    document.getelementbyid("myimage").src="patenteA.jpg"
+    document.getelementbyid("myimage").src="https://www.google.com/imgres?q=patente%20b&imgurl=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fc%2Fc1%2FIT_licence_%2528front%2529.jpg&imgrefurl=https%3A%2F%2Fit.wikipedia.org%2Fwiki%2FPatente_di_guida_italiana&docid=08iyPbgmB37frM&tbnid=vNLym3BXVKZruM&vet=12ahUKEwjf6_nkl-OTAxWX9gIHHed7PJEQnPAOegQIIxAB..i&w=536&h=339&hcb=2&ved=2ahUKEwjf6_nkl-OTAxWX9gIHHed7PJEQnPAOegQIIxAB"
 }else if(eta<18 && ata>=16) {
-    document.getelementbyid("my image").src="patenteB.jpg"
+    document.getelementbyid("my image").src="https://www.google.com/imgres?q=patente%20a&imgurl=https%3A%2F%2Fwww.chiarezza.it%2Fwp-content%2Fuploads%2F2013%2F07%2Fpatente.jpg&imgrefurl=https%3A%2F%2Fwww.chiarezza.it%2Fguide%2Ftutti-i-tipi-di-patente-dalla-a-alla-d%2F&docid=eQ9iWUD0QYcbJM&tbnid=Byaoin2m6Ho7cM&vet=12ahUKEwjPjazGl-OTAxURxQIHHZXrJpUQnPAOegQIFxAB..i&w=400&h=251&hcb=2&ved=2ahUKEwjPjazGl-OTAxURxQIHHZXrJpUQnPAOegQIFxAB"
 }else { document.getelementbyid("demo").innerHTML= text
 }}
 <button onclick="verifica()">Verifica</button>
