@@ -2,49 +2,32 @@
 <!DOCTYPE html>
 <html>
 <head>
+<body>
+<script>
     
     <title>Controllo Patente</title>
   
-       
-        
- <input>
- <body>
+    let text="non sei idoneo,riprova quando sarai più grande!"
+    
+  <p id="demo"></p>
+ <img id="myimage" src="profilepic.jpg"></pic>
+
     <h1>Verifica Patente</h1>
 
-    <input type="text" id="nome" placeholder="Nome"><br>
-    <input type="text" id="cognome" placeholder="Cognome"><br>
-    <input type="number" id="eta" placeholder="Età"><br>
-
-    <button onclick="verifica()">Verifica</button>
-
-    <div id="risultato"></div>
-
-    <script>
-        function verifica() {
-            let nome = document.getElementById("nome").value;
-            let cognome = document.getElementById("cognome").value;
-            let eta = parseInt(document.getElementById("eta").value);
-            let risultato = document.getElementById("risultato");
-
-    
-
-            if (eta >= 18) {
-                risultato.innerHTML = `
-                    <p>${nome} ${cognome}, puoi avere la patente B (auto)</p>
-                    <img src="https://via.placeholder.com/300x180?text=Patente+B" alt="Patente B">
-                ;
-            } else if (eta >= 16) {
-                risultato = 
-                    <p>${nome} ${cognome}, puoi avere la patente A (moto)</p>
-                    <img src="https://via.placeholder.com/300x180?text=Patente+A" alt="Patente A">
-                ;
-            } else {
-                risultato.innerHTML = `
-                    <p>${nome} ${cognome}, riprova quando sarai più grande</p>
-                ;
-            }
-        }
-    </script>
-
+    let nome=prompt("inserisci nome")
+    console.log(nome)
+    let cognome=prompt("inserisci cognome")
+    console.log(cognome)
+    let eta=number(prompt("inserisci età"))
+    function verifica(){
+    if(eta>=18){ 
+    document.getelementbyid("myimage").src="patenteA.jpg"
+}else if(eta<18 && ata>=16) {
+    document.getelementbyid("my image").src="patenteB.jpg"
+}else { document.getelementbyid("demo").innerHTML= text
+}}
+<button onclick="verifica()">Verifica</button>
+<div id="risultato"></div>
+</script> 
 </body>
 </html>
